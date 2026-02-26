@@ -7,7 +7,7 @@ export default function Home() {
   const [status, setStatus] = useState('');
 
   useEffect(() => {
-    const fetchData = async () => 
+    const fetchData = async () => { 
       try {
         // First check if backend is healthy
         const healthCheck = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/health`);
